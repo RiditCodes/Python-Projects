@@ -1,0 +1,5 @@
+x = int(input("Enter a number: "))
+y = int(input("Enter a second number: "))
+print(x>=y and y==x)
+print(x>y or y==x)
+print(not(y>x))
