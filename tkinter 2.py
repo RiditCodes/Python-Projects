@@ -4,7 +4,7 @@ from tkinter import messagebox
 def click():
     t1 = first_name.get(1.0, "end-1c")
     t2 = last_name.get(1.0, "end-1c")
-    messagebox.showinfo(message=f"Your full name is: {t1} {t2}")
+    messagebox.showinfo(message=f"Your full name is: {t1} {t2}", title="Name")
 
 def textbox_switch():
     if tk.focus_get() == first_name:
