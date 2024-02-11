@@ -6,11 +6,9 @@ def click():
     t2 = last_name.get(1.0, "end-1c")
     messagebox.showinfo(message=f"Your full name is: {t1} {t2}", title="Name")
 
-def textbox_switch():
-    if tk.focus_get() == first_name:
-        last_name.focus()
-    elif tk.focus_get() == last_name:
-        first_name.focus()
+def textbox_switch(event):
+    event.widget.tk_focusNext().focus()
+    return("break")
 
 tk = tkinter.Tk(className="Full name")
 tk.geometry("350x150")
@@ -31,6 +29,6 @@ last_name.grid(column=1, row=1)
 pr.grid(column=1, row = 2)
 
 first_name.focus()
-tk.bind("<Tab>", textbox_switch)
+first_name.bind("<Tab>", textbox_switch)
 
 tk.mainloop()
