@@ -16,8 +16,8 @@ tk.geometry("350x150")
 first_name = tkinter.Text(height = 1, width = 10, fg="green")
 last_name = tkinter.Text(height = 1, width = 10, fg="green")
 
-first_lbl = tkinter.Label(text = "Enter first name: ")
-last_lbl = tkinter.Label(text = "Enter last name: ")
+first_lbl = tkinter.Label(text = "Enter first name: ", font=("Times New Roman", 10))
+last_lbl = tkinter.Label(text = "Enter last name: ", font=("Courier", 10))
 
 pr = tkinter.Button(text="Show full name", command = click)
 
