@@ -1,4 +1,4 @@
-def person(name, age = 40):
+def person(name, age = 12):
     print("Name = ", name)
     print("Age = ", age)
 
