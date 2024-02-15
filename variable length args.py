@@ -1,4 +1,4 @@
-def variable_length(*names):
+def variable_length(names):
     print(names)
 
 num = int(input("Enter no. of entries: "))
@@ -7,7 +7,10 @@ string1 = ""
 
 while a <= num:
     string = input("Enter name: ")
-    string1 = string1 + string
+    if a == num:
+        string1 = string1 + string
+    else:
+        string1 = string1 + string + ","
     a += 1
 
 variable_length(string1)
