@@ -1,5 +1,7 @@
 def variable_length(*names):
-    print(names)
+    print(type(names))
+    for name in names:
+        print(name)
 
 num = int(input("Enter no. of entries: "))
 a = 1
