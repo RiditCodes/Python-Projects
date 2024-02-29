@@ -1,5 +1,5 @@
-List = [2, 5, 1, 6, 8, 3, 9, 4]
-
-print(List[:8])
-print(List[5:])
-print(List[2:6])
+list1 = []
+for num in range(0, 5):
+    num = input("Enter your item: ")
+    list1.append(num)
+print(list1)
