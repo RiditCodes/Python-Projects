@@ -8,8 +8,8 @@ print(List[1:6])
 print(List[:])
 print(List[2:7:2])
 print(List[1:7:3])
-print(List[1::3])
-print(List[::4])
+
+print("\nNegative Indexing: \n")
 
 print(List[-1])
 print(List[:-2])

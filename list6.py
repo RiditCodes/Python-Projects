@@ -1,13 +1,14 @@
-List1 = [1, 2, 3, 4, 5]
-List2 = [6, 7, 8, 9, 10]
+fruits1 = ["Mango", "Guava", "Orange"]
+fruits2 = ["Watermelon", "Green Grapes", "Apple"]
 
-print(List1*3)
-print(List1+List2)
+fruits1.extend(fruits2)
 
-print(4 in List1)
-print(4 in List2)
+print(fruits1)
 
-print(len(List2))
+fruits1.sort()
 
-print(max(List1))
-print(min(List1))
+print(fruits1)
+
+fruits1.sort(reverse = True)
+
+print(fruits1)

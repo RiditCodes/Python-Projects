@@ -1,18 +1,17 @@
-List = [2, 5, 1, 6, 8, 3, 9, 4]
+List = [3, 4, 1, 5, 6, 2]
 
-print(List[:8])
-print(List[0:])
-print(List[:5])
-print(List[2:])
-print(List[1:6])
-print(List[:])
-print(List[2:7:2])
-print(List[1:7:3])
+print(List)
 
-print("\nNegative Indexing: \n")
+List[3] = 12
 
-print(List[-1])
-print(List[:-2])
-print(List[-6:])
-print(List[-7:-3])
-print(List[-5:-1:2])
+print(List)
+
+List[2:5] = [8, 0, 15]
+
+print(List)
+
+List[-6] = 7
+
+print(List)
+
+List[-5:-3] = [16, 17]

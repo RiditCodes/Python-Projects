@@ -1,15 +1,13 @@
-List = [3, 4, 1, 5, 6, 2]
+List1 = [1, 2, 3, 4, 5]
+List2 = [6, 7, 8, 9, 10]
 
-print(List)
+print(List1*3)
+print(List1+List2)
 
-List[3] = 12
+print(4 in List1)
+print(4 in List2)
 
-print(List)
+print(len(List2))
 
-List[2:5] = [7, 78, 700]
-
-print(List)
-
-List[-6] = 8
-
-print(List)
+print(max(List1))
+print(min(List1))
