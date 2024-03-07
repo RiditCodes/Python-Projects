@@ -15,3 +15,5 @@ List[-6] = 7
 print(List)
 
 List[-5:-3] = [16, 17]
+
+print(List)
