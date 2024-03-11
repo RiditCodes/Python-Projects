@@ -1,14 +1,12 @@
-fruits1 = ["Mango", "Guava", "Orange"]
-fruits2 = ["Watermelon", "Green Grapes", "Apple"]
+List1 = [1, 2, 3, 4, 5]
+List2 = ["Peacock", "Cuckoo", "Duck", "Dove", "Kingfisher"]
 
-fruits1.extend(fruits2)
+print("List1 elements: ")
+for i in List1:
+    print(i)
 
-print(fruits1)
+print("\n\n")
 
-fruits1.sort()
-
-print(fruits1)
-
-fruits1.sort(reverse = True)
-
-print(fruits1)
+print("List2 elements: ")
+for i in List2:
+    print(i)
