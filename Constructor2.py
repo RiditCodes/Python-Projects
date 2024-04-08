@@ -1,10 +1,10 @@
-class Student:
-    name = "Ridit"
-    roll_num = 22
+class Employee:
+    def __init__(self, name):
+        print("Parameterized constructor")
+        self.name = name
+    def display(self):
+        print(f"Employee Name: {self.name}")
 
-    def show(self):
-        print(self.name)
-        print(self.roll_num)
-
-student = Student()
-student.show()
+text = input("Enter name: ")
+employee = Employee(text)
+employee.display()

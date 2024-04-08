@@ -1,9 +1,10 @@
-class Func:
-    def __init__(self):
-        name = "Rahul"
-        self.name = name
-    def display(self):
-        print(self.name)
+class Student:
+    name = "Ridit"
+    roll_num = 22
 
-name = Func()
-name.display()
+    def show(self):
+        print(self.name)
+        print(self.roll_num)
+
+student = Student()
+student.show()
