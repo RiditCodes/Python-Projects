@@ -4,7 +4,11 @@ class Book:
         self.book_author = book_author
         self.book_price = book_price
 
+    def show(self):
+        print(self.book_title, "\n", self.book_author, "\n", self.book_price)
+
 book = Book("Python programming", "Mark", 3000)
+book.show()
 
 #getattr returns the attribute value of an object
 print(getattr(book, "book_title"))
