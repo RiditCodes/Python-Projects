@@ -13,3 +13,6 @@ print(book.__doc__)
 
 #It provides the dictionary containing class attributes and values.
 print(book.__dict__)
+
+#It returns the module n which this class is defined
+print(book.__module__)

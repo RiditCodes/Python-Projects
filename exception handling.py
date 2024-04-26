@@ -1,18 +1,19 @@
-a = 53
-b = 0
+a = 10
+b = 1
 
 try:
-    print("trying...")
     print(a/b)
+    k = int(input("Enter number: "))
+    print(k)
 
 except ZeroDivisionError as e:
-    print("Number cannot be divided by zero")
+    print("Number cannot be divided by zero", e)
 
 except ValueError as e:
     print("Invalid input")
 
 except Exception as e:
-    print("Something went wrong")
+    print("Something went wrong...")
 
 finally:
-    print("finally finished")
+    print("End")
