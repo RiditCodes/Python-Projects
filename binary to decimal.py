@@ -1,9 +1,16 @@
-a = 0
-b = 0
-c = 0
-d = 0
+num = int(input("Enter a number in Binary: "))
+count = 0
+temp = num
+power = 1
+add = 0
 
-binary = int(input("Enter no.: "))
+while temp > 0:
+    remainder = temp % 10
+    temp //= 10
+    count += 1
+    for i in range(1, count):
+        power *= 2
+    add = add + remainder * power
+    power = 1
 
-for n in range(len(name)-1,-1,-1):
-    list.append(name[n])
+print(add)
