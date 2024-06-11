@@ -13,4 +13,4 @@ while temp > 0:
     add = add + remainder * power
     power = 1
 
-print(add)
+print(f"{num} in Binary System is: {add}") 
