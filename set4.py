@@ -1,5 +1,5 @@
 Set = {"January", "February", "March"}
-'''
+
 print(Set)
 
 Set.add("April")
@@ -13,7 +13,7 @@ Set.discard("May")
 print(Set)
 
 Set.discard("July")
-print(Set)'''
+print(Set)
 
 Set.remove("June")
 print(Set)
