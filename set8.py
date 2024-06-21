@@ -1,9 +1,15 @@
 Days1 = {"Monday", "Tuesday"}
 Days2 = {"Tuesday", "Wednesday"}
+Days3 = {"Tuesday", "Wednesday"}
 
 print(Days1-Days2)
+print(Days2-Days1)
 
 print(Days1.difference(Days2))
+print(Days2.difference(Days1))
+
+print(Days1)
+print(Days2)
 
 '''
 Difference between two sets
