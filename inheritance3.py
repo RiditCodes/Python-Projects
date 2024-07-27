@@ -1,3 +1,5 @@
+#Single Inheritance
+
 class Base(object):
     def getData(self, a):
         self.a = a
@@ -7,7 +9,7 @@ class Derived(Base):
         self.b = b
 
     def product(self):
-        print(self.a*self.b)
+        print(f"{self.a} x {self.b} = ",self.a*self.b)
 
 Derived_object = Derived()
 x = int(input("Enter number: "))
