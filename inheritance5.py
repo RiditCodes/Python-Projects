@@ -1,3 +1,5 @@
+#Multiple Inheritance
+
 class Parent1(object):
     def __init__(self, a, b):
         self.a = a
@@ -15,9 +17,9 @@ class child(Parent1, Parent2):
         print(self.a, "/", self.b, "=", self.div)
         print(self.a, "//", self.b, "=", self.floor_div)
 
-a = int(input("Enter number to be divided: "))
-b = int(input("Enter number to be divided by: "))
-obj_child = child(a, b)
+x = int(input("Enter number to be divided: "))
+y = int(input("Enter number to be divided by: "))
+obj_child = child(x, y)
 obj_child.division()
 obj_child.floor_division()
 obj_child.show()

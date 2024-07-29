@@ -4,7 +4,7 @@ from tkinter import messagebox
 
 root = Tk()
 root.title("Tic Tac Toe")
-root.iconbitmap(r"index.ico")
+#root.iconbitmap("index.ico")
 
 clicked = True
 count = 0
