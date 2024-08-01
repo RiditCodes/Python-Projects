@@ -1,3 +1,5 @@
+#Multilevel Inheritance
+
 class Parent:
     def __init__(self, name):
         self.name = name
@@ -20,15 +22,7 @@ class GrandChild(Child):
     def getPrice(self):
         return self.price
 
-object_gc = GrandChild("Dell", "Dell Latitude 4500", "Rs. 12,000")
-print("""
-██████╗░███████╗██╗░░░░░██╗░░░░░
-██╔══██╗██╔════╝██║░░░░░██║░░░░░
-██║░░██║█████╗░░██║░░░░░██║░░░░░
-██║░░██║██╔══╝░░██║░░░░░██║░░░░░
-██████╔╝███████╗███████╗███████╗
-╚═════╝░╚══════╝╚══════╝╚══════╝""")
-
+object_gc = GrandChild("Tata", "Tata NEXON XZ 1.2", "Rs. 700000")
 print("Name of company:", object_gc.getName())
 print("Name of the model:", object_gc.getModel())
 print("Price of laptop:", object_gc.getPrice())

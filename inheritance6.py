@@ -1,3 +1,5 @@
+#Multilevel Inheritance
+
 class Employee1(object):
     def getdata(self):
         self.emp_name = input("Enter name of the employee: ")
@@ -11,25 +13,27 @@ class Employee1(object):
 
 class Employee2(Employee1):
     def readdata(self):
-        self.company_name = input("Enter name of the company: ")
-        self.salary = input("Enter salary of employee: ")
+        self.name = input("Enter name of the company: ")
+        self.salary = input("Enter salary: ")
 
     def show(self):
-        print("Company name:", self.company_name)
+        print("Company name:", self.name)
         print("Salary:", self.salary)
 
 class Employee3(Employee2):
     def inputdata(self):
-        self.language_num = input("Enter no. of languages known: ")
+        self.number = input("Enter no. of languages known: ")
 
     def output(self):
-        print("Number of languages known:", self.language_num)
+        print("Number of languages known:", self.number)
 
 emp3 = Employee3()
+print("Enter the detials of the employee...")
 emp3.getdata()
 emp3.readdata()
 emp3.inputdata()
-print("\n")
+
+print("\nThe detials of the employee are displayed below...")
 emp3.display()
 emp3.show()
 emp3.output()
