@@ -1,41 +1,45 @@
+#Hierarchical Inheritance
+
 class Person:
-    def getPersonData(self):
-        self.id = input("Enter ID: ")
+    def getData(self):
         self.name = input("Enter name: ")
+        self.gender = input("Enter gender: ")
+        self.age = input("Enter age: ")
 
-    def display_person(self):
-        print("ID:", self.id)
-        print("Name:", self.name)
+    def display(self):
+        print("Name: ", self.name)
+        print("Gender: ", self.gender)
+        print("Age: ", self.age)
 
-class Teaching(Person):
-    def getTeacherData(self):
-        Person.getPersonData(self)
-        self.subject = input("Enter name of subject: ")
-        self.teacher_name = input("Enter name of the teacher: ")
+class Student(Person):
+    def readData(self):
+        self.institute = input("Enter name of the school: ")
+        self.grade = input("Enter class: ")
 
-    def display_teacher(self):
-        Person.display_person(self)
-        print("Subject:", self.subject)
-        print("Teacher name:", self.teacher_name)
+    def show(self):
+        print("School: ", self.institute)
+        print("Grade:", self.grade)
 
-class NonTeaching:
-    def getNonTeachingData(self):
-        self.department_name = input("Enter name of the department: ")
+class Employee(Person):
+    def inputData(self):
+        self.company = input("Enter name of the company: ")
+        self.salary = input("Enter salary: Rs.")
 
-    def display_nonteaching(self):
-        print("Department:", self.department_name)
+    def output(self):
+        print("Company: ", self.company)
+        print("Salary: ", self.salary)
 
-class Instructor(Teaching, NonTeaching):
-    def getInstructorData(self):
-        Teaching.getTeacherData(self)
-        NonTeaching.getNonTeachingData(self)
-
-    def display_instructor(self):
-        Teaching.display_teacher(self)
-        NonTeaching.display_nonteaching(self)
-
-instructor = Instructor()
-print("Enter student details...")
-instructor.getInstructorData()
-print("\nStudent Details are given below...")
-instructor.display_instructor()
+obj_Student = Student()
+obj_Employee = Employee()
+print("Enter details of the student...")
+obj_Student.getData()
+obj_Student.readData()
+print("\nEnter details of the employee...")
+obj_Employee.getData()
+obj_Employee.inputData()
+print("\nStudent details are given below...")
+obj_Student.display()
+obj_Student.show()
+print("\nEmployee details are given below...")
+obj_Employee.display()
+obj_Employee.output()
