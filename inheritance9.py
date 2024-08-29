@@ -3,7 +3,7 @@
 class Person:
     def accept_person_details(self):
         self.id = input("Enter ID: ")
-        self.name = input("Enter name: ")
+        self.name = input("Enter name: ") 
 
     def display_person_details(self):
         print(f"ID: {self.id}")

@@ -319,7 +319,7 @@ class LibraryManagement:
         self.library_table.bind("<ButtonRelease>", get_row) 
 
     def AddData(self):
-        con = mysql.connector.connect(host = "localhost", username = "root", password = "Eluck509@509", database = "librarydata")
+        con = mysql.connector.connect(host = "localhost", password = "Eluck509@509", database = "librarydata")
         cursor_add = con.cursor()
         cursor_add.execute("INSERT INTO information VALUES(%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)", 
             (self.member_var.get(), self.prn_var.get(), self.id_var.get(), self.firstname_var.get(),
