@@ -1,6 +1,6 @@
 import numpy as n
 
-arr = n.array([6, 5, 4, 3, 2, 1])
+arr = n.array([6, 5, 4, 3, 2])
 copy_arr = arr.copy()
 print(arr)
 print(copy_arr)
