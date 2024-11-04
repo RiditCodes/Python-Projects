@@ -10,9 +10,9 @@ print(string.islower())
 
 print(string.isupper())
 
-print(string.startswith("so"))
+print(string.startswith("R"))
 
-print(string.endswith("nic"))
+print(string.endswith("t"))
 
 print(string.center(11))
 print(string.center(11, "$"))

@@ -1,55 +1,49 @@
 import random
 
 while True:
-    choices = [1, 2, 3]
-
+    choices = ["rock", "paper", "scissors"]
+    
     computer = random.choice(choices)
     player = None
 
     while player not in choices:
-        player = int(input("Enter 1 for Rock, 2 for Paper and 3 for Scissors: "))
+        player = input("Rock, Paper or Scissors?: ").lower()
 
-    #Tie
-    if player == computer:
-        print("\nTie!")
+        if player == computer:
+            print("Computer: ", computer)
+            print("Player: ", player)
+            print("Tie!")
+        elif player == "rock":
+            if computer == "paper":
+                print("Computer: ", computer)
+                print("Player: ", player)
+                print("You lose!")
+            elif computer == "scissors":
+                print("Computer: ", computer)
+                print("Player: ", player)
+                print("You win!")
+        elif player == "scissors":
+            if computer == "rock":
+                print("Computer: ", computer)
+                print("Player: ", player)
+                print("You lose!")
+            elif computer == "paper":
+                print("Computer: ", computer)
+                print("Player: ", player)
+                print("You win!")
+        elif player == "paper":
+            if computer == "scissors":
+                print("Computer: ", computer)
+                print("Player: ", player)
+                print("You lose!")
+            elif computer == "rock":
+                print("Computer: ", computer)
+                print("Player: ", player)
+                print("You win!")
 
-    #Win or Lose
+    play_again = input("Play again?(yes/no): ").lower()
 
-    #Player = rock
-    if player == 1:
-        if computer == 2:
-            print(f"Computer: Paper")
-            print(f"Player: Rock")
-            print("\nComputer wins! Try again")
-        elif computer == 3:
-            print(f"Computer: Scissors")
-            print(f"Player: Rock")
-            print("\nYou win!")
+    if play_again != "yes":
+        break
 
-    #Player = paper
-    elif player == 2:
-        if computer == 3:
-            print(f"Computer: Scissors")
-            print(f"Player: Paper")
-            print("\nComputer wins! Try again")
-        elif computer == 1:
-            print(f"Computer: Rock")
-            print(f"Player: Paper")
-            print("\nYou win!")
-
-    #Player = scissors
-    elif player == 3:
-        if computer == 1:
-            print(f"Computer: Rock")
-            print(f"Player: Scissors")
-            print("\nComputer wins! Try again")
-        if computer == 2:
-            print(f"Computer: Paper")
-            print(f"Player: Scissors")
-            print("\nYou win!")
-
-    play_again = input("Play again?: ")
-    if play_again == "no":
-        exit()
-    else:
-        pass
+print("Bye! See you soon.")
